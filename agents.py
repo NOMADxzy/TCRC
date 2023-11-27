@@ -57,12 +57,12 @@ class Robot:
         Ec = self.kalfa * task.data_size_K * task.compute_res_H * self.fn * self.fn
         Et = self.pn * self.cpt_t_delivery(task )
         Em = self.theta * self.cpt_snl(task)
-        return 0.5 * (Ec + Et + Em)
+        return 1 * (Ec + Et + Em)
 
     def cpt_Tn(self, task: Task):
         Tc = task.compute_res_H / self.fn
         Td = self.cpt_t_delivery(task)
-        Tm = 4 * self.cpt_snl(task) / self.vn
+        Tm = 10 * self.cpt_snl(task) / self.vn
         return (Tc + Td + Tm) * self.mulT
 
     def get_cost(self, task: Task):
