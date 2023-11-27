@@ -275,6 +275,8 @@ def get_dist(pos1, pos2):
 
 
 if __name__ == "__main__":
+    if not os.path.exists('results'):
+        os.mkdir('results')
     # opm = Opm({'R': 50, 'T': 20})
     # for task in opm.tasks:
     #     _,coal_value = opm.run(task, limit_group_size=0, reserve=True)
