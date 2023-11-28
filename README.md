@@ -10,3 +10,13 @@
 pip install -r requirements.txt
 
 python opm.py # 运行
+```
+
+## Preview
+
+![图片太帅、无法显示](results/compare_R_Energy.png)
+![图片太帅、无法显示](results/compare_R_Latency.png)
+![图片太帅、无法显示](results/compare_T_Energy.png)
+![图片太帅、无法显示](results/compare_R_Latency.png)
+![图片太帅、无法显示](results/Latency.png)
+![图片太帅、无法显示](results/Energy.png)
